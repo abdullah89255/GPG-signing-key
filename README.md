@@ -14,7 +14,7 @@ You're seeing this error because your Kali Linux system is **missing a GPG signi
 #### 1. Download the missing GPG key:
 
 ```bash
-sudo curl -fsSL https://archive.kali.org/archive-key.asc | gpg --dearmor -o /etc/apt/trusted.gpg.d/kali-archive.gpg
+sudo curl -fsSL https://archive.kali.org/archive-key.asc | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/kali-archive.gpg
 ```
 
 > This will download the official Kali archive signing key and place it where APT can use it for verification.
